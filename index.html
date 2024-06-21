@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的個人網站</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>1N's Personnal Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about-me">關於我</a></li>
+        <li><a href="#skills">興趣</a></li>
+        <li><a href="#contact">聯繫我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about-me">
+      <h2>關於我</h2>
+      <p>我是 Yien，這是一個由Gemini協助我撰寫程式的網站</p>
+      <img src="dog.jpg" height="100" alt="cute dog">
+    </section>
+
+    <section id="skills">
+      <h2>興趣</h2>
+      <ol>
+        <li><a href="volleyball.html">打排球</a></li>
+        <li><a href="piano.html">彈鋼琴</a></li>
+        <li>偶爾做出反社會行為的動作</li>
+        <li>使用Generative AI打造我的功課</li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>聯繫我</h2>
+      <p>如果您有任何問題或想了解更多信息，請隨時與我聯繫。</p>
+      <form id="contact-form" method="post" action="contact.php">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">訊息：</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">送出</button>
+      </form>
+      <div id="form-response"></div>
+      <ul>
+        <li><a href="mailto:yienchang0424@gmail.com">電子郵件</a></li>
+        <li><a href="https://www.instagram.com/y_i_e_n/">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Yien</p>
+  </footer>
+</body>
+</html>
